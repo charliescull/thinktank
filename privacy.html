@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Think Tank Privacy Policy</title>
+<meta name="description" content="How the Think Tank desktop app accesses, uses, stores and shares Google user data.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <span class="mark">THINK TANK</span>
+  <nav><a href="./">Home</a><a href="privacy.html" aria-current="page">Privacy</a></nav>
+</header>
+<main>
+  <p class="label">Effective 2026-10-24</p>
+  <h1>Privacy policy</h1>
+  <p class="lede">Think Tank is a personal Windows desktop app built and used by Charlie Scullion. This policy explains
+  what Google user data the app accesses and what it does with it.</p>
+
+  <section>
+    <p class="label">1 · Data the app accesses</p>
+    <p>When the user signs in with Google, Think Tank asks for these permissions:</p>
+    <ul>
+      <li><b>Gmail, read</b> (<code>gmail.readonly</code>): sender, recipients, subject, date, labels, snippet and, for a thread the user asks to reply to, the message text.</li>
+      <li><b>Gmail, compose</b> (<code>gmail.compose</code>): used only to save reply drafts. The app has no code that sends email.</li>
+      <li><b>Calendar, read</b> (<code>calendar.readonly</code>): calendars and upcoming events.</li>
+      <li><b>Calendar, events</b> (<code>calendar.events</code>): used only to create an event, with a Google Meet link, when the user submits the New meeting form.</li>
+      <li><b>Basic profile</b> (<code>openid</code>, <code>email</code>): the signed-in email address, shown in the app.</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="label">2 · How the data is used</p>
+    <p>The data is used only to show the user their own calendar and inbox, rank emails by priority, draft replies the
+    user asks for, save those drafts to Gmail, and create meetings the user requests. It is not used for advertising or
+    profiling, and it is never sold.</p>
+  </section>
+
+  <section>
+    <p class="label">3 · Storage</p>
+    <p>Think Tank has no server. It runs on the user's own PC and talks directly to Google's APIs. The Google sign-in
+    token is stored in Windows Credential Manager on that PC. Emails and events are fetched when the app needs them
+    and are not saved to disk. They are held only briefly in memory to show them on screen.</p>
+  </section>
+
+  <section>
+    <p class="label">4 · Sharing</p>
+    <p>Google user data is not shared with anyone, with one exception. When the user clicks to have a reply drafted,
+    the text of that one email thread is sent to Anthropic's Claude, through the Claude Code app signed in to the
+    user's own Claude account, to write the draft. The user reviews the draft, saves it to Gmail, and sends it
+    themselves. Nothing is sent to Claude unless the user asks for a draft.</p>
+  </section>
+
+  <section>
+    <p class="label">5 · Google API Services User Data Policy</p>
+    <p>Think Tank's use and transfer of information received from Google APIs to any other app will adhere to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    including the Limited Use requirements.</p>
+  </section>
+
+  <section>
+    <p class="label">6 · Removing access and deleting data</p>
+    <p>Click <b>Disconnect</b> in the app's Connections panel to delete the stored token, or remove Think Tank at
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Because emails and events
+    are not saved, nothing else needs to be deleted.</p>
+  </section>
+
+  <section>
+    <p class="label">7 · Contact</p>
+    <p>Questions about this policy: <a href="mailto:charlie.johannes.scullion@gmail.com">charlie.johannes.scullion@gmail.com</a>.
+    If this policy changes, the new version will be posted on this page with a new effective date.</p>
+  </section>
+</main>
+<footer><span>© 2026 Charlie Scullion</span><a href="./">Think Tank</a></footer>
+</body>
+</html>
